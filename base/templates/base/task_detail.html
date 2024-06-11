@@ -1,0 +1,9 @@
+{% extends 'base/main.html' %}
+{% block content %}
+
+
+<p>{{task}}</p>
+<p>{{task.description}}</p>
+<p>{{task.created}}</p>
+<button><a href="{% url 'tasks' %}">Go back!</a></button>
+{% endblock content %}
